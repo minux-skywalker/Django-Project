@@ -9,11 +9,14 @@ from django.shortcuts import render
 #     return HttpResponse('ROOM')
 
 rooms=[
-    {}
+    {'id':1, 'name':'Let\'s learn python!' },
+    {'id':1, 'name':'Design the UX!' },
+    {'id':1, 'name':'Learn MERN Stack!' },
 ]
 
 def home(request):
-    return render(request,'home.html')
+    context={'rooms':rooms}
+    return render(request,'base/home.html', context)
 
 def room(request):
-    return render(request, 'room.html')
+    return render(request, 'base/room.html')
