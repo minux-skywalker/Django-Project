@@ -1,1 +1,10 @@
 "Starting With First Django Project" 
+We have learned today that we can also do template inheritance,
+although Django can be part of front end, but mostly used for backend development.
+ 1. {% block content %} {%endblock%} are used for template 
+    inheritance, must be written in main file. It act as a wrapper tag. Eg. from 'room.html
+    {% extends 'main.html' %}
+
+    {% block content %}
+    <h1>Room Template</h1>
+    {% endblock %}
