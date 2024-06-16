@@ -8,6 +8,10 @@ from django.shortcuts import render
 # def room(request):
 #     return HttpResponse('ROOM')
 
+rooms=[
+    {}
+]
+
 def home(request):
     return render(request,'home.html')
 
